@@ -29,7 +29,7 @@ export default function Navbar() {
             Models
           </Link>
           <Link
-            href="#features"
+            href="/features"
             className="hover:text-gray-600 transition-colors"
           >
             Features

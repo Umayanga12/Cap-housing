@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion";
+// import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function AboutUs() {
   return (
@@ -16,10 +16,13 @@ export default function AboutUs() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl font-bold mb-6">About Us</h2>
-            <h3 className="text-2xl font-semibold mb-4">Sed ut perspiciatis unde omnis</h3>
+            <h3 className="text-2xl font-semibold mb-4">
+              Sed ut perspiciatis unde omnis
+            </h3>
             <p className="text-gray-600 mb-6">
-              Nemo enim ipsum voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+              Nemo enim ipsum voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
             </p>
             <Button size="lg">Learn More</Button>
           </motion.div>
@@ -30,16 +33,15 @@ export default function AboutUs() {
             transition={{ duration: 0.8 }}
             className="relative h-[400px] rounded-lg overflow-hidden"
           >
-            <Image
+            {/* <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/capsule-xhEz8oEt1b5iQPy6BSj2yH5JUSBmJY.png"
               alt="Modern capsule home"
               fill
               className="object-cover"
-            />
+            /> */}
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }
-

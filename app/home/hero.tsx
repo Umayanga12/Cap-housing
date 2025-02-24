@@ -2,15 +2,10 @@
 
 //import { motion } from "framer-motion";
 
-import Image from "next/image";
+//import Image from "next/image";
 export default function Hero() {
   return (
-    <Image
-      src="/Leonardo_Lightning_XL_Generate_a_highresolution_ultradetailed_3 (2).jpg"
-      alt="Background"
-      width={1920}
-      height={1080}
-    />
+    <div></div>
     // <div className="relative h-screen">
     //   {/* Background Image */}
     //   <div

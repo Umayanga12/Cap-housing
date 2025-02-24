@@ -1,14 +1,27 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { useRouter } from "next/navigation"; // ✅ Correct import
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const models = [
   {
     title: "Solo Pod",
-    description: "Perfect for individuals seeking efficiency and minimalist living",
-    features: ["36m² Living Space", "Smart Home Integration", "Energy Efficiency"],
+    description:
+      "Perfect for individuals seeking efficiency and minimalist living",
+    features: [
+      "36m² Living Space",
+      "Smart Home Integration",
+      "Energy Efficiency",
+    ],
   },
   {
     title: "Duo Pod",
@@ -25,9 +38,11 @@ const models = [
     description: "Optimized floor plan design perfect for growing families",
     features: ["86m² Living Space", "Multiple Rooms", "Home Office Setup"],
   },
-]
+];
 
 export default function HousingModels() {
+  const router = useRouter(); // ✅ Corrected import
+
   return (
     <section className="py-20 bg-gray-50" id="models">
       <div className="container mx-auto px-4">
@@ -72,12 +87,15 @@ export default function HousingModels() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
+          <Button
+            variant="outline"
+            size="default"
+            onClick={() => router.push("/model")}
+          >
             Learn More
           </Button>
         </div>
       </div>
     </section>
-  )
+  );
 }
-
